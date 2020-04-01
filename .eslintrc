@@ -1,9 +1,12 @@
 {
   "extends": [
-    "@crowdhouse/eslint-config-react",
+    "airbnb-typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
   ],
-  "globals": {
-      "xit": true,
-      "test": true
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
   }
 }
