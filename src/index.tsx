@@ -16,7 +16,7 @@ declare global {
 }
 
 if (window.frontends) {
-  window.frontends.sell = {
+  window.frontends.intro = {
     register: (containerId, history) => {
       ReactDOM.render(<App history={history} />, document.getElementById(containerId));
       // If you want your app to work offline and load faster, you can change
@@ -24,8 +24,8 @@ if (window.frontends) {
       // Learn more about service workers: https://bit.ly/CRA-PWA
       serviceWorker.unregister();
     },
-    unregister: containerId => {
+    unregister: (containerId) => {
       ReactDOM.unmountComponentAtNode(document.getElementById(containerId) as HTMLElement);
-    }
+    },
   };
 }

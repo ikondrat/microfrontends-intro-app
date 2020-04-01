@@ -7,7 +7,7 @@ const defaultHistory = createBrowserHistory();
 const App = ({ history }: { history?: History }) => {
   return (
     <Router history={history || defaultHistory}>
-      <div>Sell application</div>
+      <div>Intro for the awesome store</div>
     </Router>
   );
 };
